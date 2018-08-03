@@ -9,7 +9,11 @@ $sans-serif-web: sans-serif !default;
 $font-1: 'Cinzel', $serif-web;
 $font-2: 'Open Sans', $sans-serif-web;
 $font-3: $font-2;
-$font-4: 'UnifrakturCook', cursive;
+$font-4: 'Canterbury','UnifrakturCook', cursive, $sans-serif-web;
+$font1: $font-1;
+$font2: $font-2;
+$font3: $font-3;
+$font4: $font-4; // 'cos I get this wrong a lot.
 
 // Add import rules for any referenced fonts you below. You must use Google
 // Fonts or an equivalent over https. For example, to import Alegreya Sans, use:

@@ -1,9 +1,12 @@
 // Elements
 $body-font-family: $font-1 !default;
 $h1-font-family: $font-1 !default;
-
+$para-align: ( web: justify) !default;
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/elements';
 
 // Add custom SCSS below these imports and includes.
 @import 'components/elements';
+main *+p {
+    margin-top: 0px;
+}
