@@ -13,11 +13,14 @@
     background-color: $old-paper;
   }
   section.chapter {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
   section.chapter p {
     font-size: 1.1em;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
   }
   .page-num {
     font-family: $font-2;
