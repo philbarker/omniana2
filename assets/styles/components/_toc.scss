@@ -1,8 +1,24 @@
 // Table of Contents
 
 // Override variables above this line, using the !default flag to allow further overrides.
-@import 'variables/toc';
+//@import 'variables/toc';
 
 // Add custom SCSS below these imports and includes.
-// @import 'components/toc/center';
+@import 'components/toc/center';
 @import 'components/toc/left';
+.block-reading-toc .toc__list li ol li.toc__back-matter,
+.block-reading-toc .toc__list li ol li.toc__chapter,
+.block-reading-toc .toc__list li ol li.toc__front-matter {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0.9rem;
+  text-indent: -0.5rem;
+  a {
+    color: $book-blue;
+  }
+}
+
+.block-reading-toc .toc__list p.toc__front-matter__title button,
+.block-reading-toc .toc__list p.toc__back-matter__title button {
+  color: $book-blue;
+}
