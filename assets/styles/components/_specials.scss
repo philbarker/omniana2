@@ -16,6 +16,8 @@ div.poem {
 }
 div.poem + div.quote-cite {
   margin-top: -0.5rem;  //don't want gap below poem if next line is citation
+  font-size: $small-font-size;
+  line-height: $small-line-height;
 }
 div.poem p{
   text-indent: 0px;
@@ -27,8 +29,6 @@ div.poem p{
   margin-left: 2.5em;
   font-style: italic;
   text-align: right;
-  font-size: $small-font-size;
-  line-height: $small-line-height;
 }
 .quote-cite p {
   margin-top: 0px;
