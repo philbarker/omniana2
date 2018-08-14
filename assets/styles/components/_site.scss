@@ -1,0 +1,39 @@
+// web site appearance
+
+// Add custom SCSS below these imports and includes.
+header.header {
+  padding-bottom: 0px;
+}
+.reading-header {
+  background-color: $book-blue;
+  margin-top: 2rem;
+}
+.reading-header__toc {
+  background-color: $book-blue;
+}
+.reading-header__title {
+  background-color: $light-blue;
+}
+h1.reading-header__title {
+  font-family: $font-1;
+  text-transform: none;
+  font-variant: small-caps;
+}
+
+.reading-reader__end-container {
+  background-color: $book-blue;
+}
+
+.nav-reading, .nav-reading__up {
+  background-color: $book-blue;
+  border-color: $book-blue;
+}
+
+ul#nav-primary-menu.nav--primary li a {
+  color: $book-blue;
+}
+
+form.search-form input.search-field {
+  border-color: $book-blue;
+  color: $book-blue;
+}

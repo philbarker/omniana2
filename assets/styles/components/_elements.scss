@@ -10,3 +10,7 @@ $para-align: ( web: justify) !default;
 main *+p {
     margin-top: 0px;
 }
+
+.chapter a {
+  text-decoration: none;
+}

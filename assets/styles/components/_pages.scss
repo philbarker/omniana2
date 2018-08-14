@@ -6,6 +6,12 @@
 @import 'components/pages';
 
 @if $type == 'web' {
+  main {
+    background-color: #fff
+  }
+  div#content {
+    background-color: $old-paper;
+  }
   section.chapter {
     margin-left: 3em;
     margin-right: 3em;

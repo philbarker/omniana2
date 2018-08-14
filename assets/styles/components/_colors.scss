@@ -1,4 +1,13 @@
 // Colors
+$book-blue: rgb(2,49,127) !default;
+$light-blue: rgb(4,99,255) !default;
+$old-paper: #f0e0bb !default;
+
+$link-color: (
+  epub: initial,
+  prince: initial,
+  web: $book-blue
+) !default;
 
 // Override variables above this line, using the !default flag to allow further overrides.
 @import 'variables/colors';
