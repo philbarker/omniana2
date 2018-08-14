@@ -9,6 +9,7 @@ $para-align: ( web: justify) !default;
 @import 'components/elements';
 main *+p {
     margin-top: 0px;
+    text-indent: 1em;
 }
 
 .chapter a {
@@ -17,4 +18,8 @@ main *+p {
 
 .chapter sup {
   font-size: 0.7em;
+}
+
+div.centered p {
+  text-align: center;
 }
