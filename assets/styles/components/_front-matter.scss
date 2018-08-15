@@ -1,0 +1,87 @@
+@if $type == 'web' {
+  section.front-matter {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+  }
+  section.title-page,
+  section.halftitle, {
+    h1 {
+      font-family: $font-4;
+      font-size: 3rem;
+      text-align: center;
+    }
+    h2 {
+      font-family: $font-1;
+      font-size: 2.7rem;
+      text-transform: uppercase;
+    }
+    p {
+      text-align: center;
+      text-indent: 0;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    hr {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  section.printer-info {
+    margin-top: 30rem;
+  }
+  section.halftitle {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  section.contents {
+    h1 {
+      font-family: $font-1;
+      font-size: 2.7rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: center;
+      text-indent: 0;
+      font-size: 2rem;
+    }
+    table {
+      border-top: none;
+      border-bottom: none;
+    }
+    td {
+//      font-size: 0.95rem;
+      padding: 0.2rem;
+      padding-right: 0px;
+      padding-left: 0px;
+      text-align: left;
+    }
+    td:nth-child(2) {
+      padding-left: 2.8rem;
+      text-indent: -2rem;
+    }
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6) {
+      text-align: center;
+    }
+    td:first-child,
+    td:last-child {
+      text-align: right;
+    }
+    td:last-child {
+      vertical-align: bottom;
+    }
+    td:first-child {
+      vertical-align: top;
+    }
+    table + p {
+      text-align: center;
+      text-indent: 0;
+      font-size: $small-font-size;
+    }
+  }
+}
