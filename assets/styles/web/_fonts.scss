@@ -6,7 +6,7 @@ $sans-serif-web: sans-serif !default;
 // Insert custom fonts for your theme into the font stacks below. Always end the
 // stack with $serif-web or $sans-serif-web, as appropriate—this allows custom
 // language support to be added dynamically.
-$font-1: 'Cinzel', $serif-web;
+$font-1: 'IM Fell Double Pica', $serif-web;
 $font-2: 'Open Sans', $sans-serif-web;
 $font-3: $font-2;
 $font-4: 'Canterbury','UnifrakturCook', cursive, $sans-serif-web;
@@ -18,4 +18,4 @@ $font4: $font-4; // 'cos I get this wrong a lot.
 // Add import rules for any referenced fonts you below. You must use Google
 // Fonts or an equivalent over https. For example, to import Alegreya Sans, use:
 // @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|UnifrakturCook:700');
