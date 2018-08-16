@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Karla');
+
+header.header {
+  padding-bottom: 32px;
+}
+ul#nav-primary-menu.nav--primary li a {
+  color: #023174;
+}
+section.book-header {
+  background-color: #d6e5ff;
+  color: #000;
+  font-family: 'EB Garamond', sans-serif;
+  margin-bottom: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+h1.book-header__title {
+  color: #023174;
+  font-family: inherit;
+}
+p.book-header__author {
+  color: inherit;
+  font-family: inherit;
+}
+p.book-header__description {
+  color: inherit;
+  font-family: inherit;
+}
+div.book-header__cover {
+  padding: 2rem;
+  margin: 0px;
+}
+div.book-header__cover img {
+  padding: 0px;
+  margin: 0px;
+}
+div.book-header__cta a.call-to-action {
+  background-color:  #023174;
+}
