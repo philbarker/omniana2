@@ -14,9 +14,12 @@ header.header {
 .reading-header__title {
   background-color: $light-blue;
 }
-h1.reading-header__title {
-  font-family: $font-1;
+h1.reading-header__title a {
+  --header-color: $book-blue;
+  font-family: $font-2;
+  color: $book-blue;
   text-transform: none;
+  font-weight: normal;
   font-variant: small-caps;
 }
 

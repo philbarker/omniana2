@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Karla');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans');
 
 header.header {
   padding-bottom: 32px;
@@ -6,17 +6,36 @@ header.header {
 ul#nav-primary-menu.nav--primary li a {
   color: #023174;
 }
-section.book-header {
-  background-color: #d6e5ff;
+
+section.book-header,
+section.block-info,
+section.block-meta {
+  background-color: #fff;
   color: #000;
-  font-family: 'EB Garamond', sans-serif;
+  font-family: 'EB Garamond', serif;
   margin-bottom: 0px;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0px;
 }
-h1.book-header__title {
+section.book-header {
+  background-color: #d6e5ff;
+}
+h1.book-header__title,
+h2.block-info__title,
+h2.block-meta__title,
+h3.block__subtitle,
+.block-meta__subtitle {
+  --primary: #023174;
   color: #023174;
   font-family: inherit;
+  font-weight: normal;
+  font-variant-caps: small-caps;
+  text-transform: none;
+}
+.block-toc,
+.block-info__inner {
+  padding-bottom: 0px;
+  margin-bottom: 1rem;
 }
 p.book-header__author {
   color: inherit;
@@ -29,11 +48,95 @@ p.book-header__description {
 div.book-header__cover {
   padding: 2rem;
   margin: 0px;
+  margin-top: 1rem;
 }
 div.book-header__cover img {
   padding: 0px;
   margin: 0px;
 }
-div.book-header__cta a.call-to-action {
+div.book-header__cta a.call-to-action,
+div.toc_toggle button {
   background-color:  #023174;
+}
+
+section.block-toc {
+  --primary: #023174;
+  color: #023174;
+  font-family: 'Open Sans', sans-serif;
+}
+h2.block-toc__title {
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+h2.block-toc__title::before,
+h2.block-info__title::before,
+h2.block-meta__title::before {
+  height: 0px;
+  width: 0px;
+  margin: 0px;
+}
+ol.toc__list {
+  color: inherit;
+  font: inherit;
+}
+p.toc__front-matter__title button,
+ol.toc__front-matter-list li.toc__front-matter div a,
+p.toc__back-matter__title button,
+ol.toc__back-matter-list li.toc__back-matter div a
+{
+  font: inherit;
+  font-size: 1.2rem;
+  color: inherit;
+}
+div.inner-content ol.toc__chapters {
+  font: inherit;
+  color: inherit;
+  column-count: 3;
+  line-height: 1.1rem;
+}
+div.inner-content ol.toc__chapters li {
+  font: inherit;
+  color: inherit;
+  padding-left: 2rem;
+  text-indent: -2rem;
+}
+div.inner-content ol.toc__chapters li a.toc__chapter-title {
+  font: inherit;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+section.block-info {
+  display: none;
+}
+div.block-meta__content-box {
+  padding: 0px;
+  max-width: 60rem;
+}
+h2.block-meta__title {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+dl.block-meta__list {
+  column-count: 1;
+}
+dl.block-meta__list div.block-meta__subsection {
+  margin-bottom: 1rem;
+}
+dl.block-meta__list div.block-meta__subsection dt.block-meta__subtitle {
+  display: inline;
+}
+dl.block-meta__list div.block-meta__subsection dt.block-meta__subtitle:after {
+  display: inline;
+  content: ': ';
+}
+dl.block-meta__list div.block-meta__subsection dd {
+  display: inline;
+}
+dl.block-meta__list div.block-meta__subsection dd div.license-attribution:first-child {
+  display: none;
 }
