@@ -22,3 +22,8 @@
 .block-reading-toc .toc__list p.toc__back-matter__title button {
   color: $book-blue;
 }
+
+li.toc__part div.inner-content .toc__chapters {
+  height: 20rem;
+  overflow-y: scroll;
+}
