@@ -61,6 +61,9 @@
     td {
 //      font-size: 0.95rem;
       padding: 0.2rem;
+      @media (max-width: $phone-width ) {
+        font-size: 0.9rem;
+      }
       padding-right: 0px;
       padding-left: 0px;
       text-align: left;
@@ -72,7 +75,7 @@
       }
       @media (max-width: $phone-width ) {
         padding-left: .5rem;
-        text-indent: -.5rem;
+        text-indent: -.3rem;
       }
     }
     td:nth-child(3),
