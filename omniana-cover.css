@@ -86,8 +86,7 @@ ol.toc__list {
 p.toc__front-matter__title button,
 ol.toc__front-matter-list li.toc__front-matter div a,
 p.toc__back-matter__title button,
-ol.toc__back-matter-list li.toc__back-matter div a
-{
+ol.toc__back-matter-list li.toc__back-matter div a {
   font: inherit;
   font-size: 1.2rem;
   color: inherit;
@@ -95,9 +94,20 @@ ol.toc__back-matter-list li.toc__back-matter div a
 div.inner-content ol.toc__chapters {
   font: inherit;
   color: inherit;
-  column-count: 3;
+  column-count: 2;
   line-height: 1.1rem;
 }
+@media (min-width: 960px ) {
+  div.inner-content ol.toc__chapters {
+    column-count: 3;
+  }
+}
+@media (max-width: 516px ) {
+  div.inner-content ol.toc__chapters {
+    column-count: 1;
+  }
+}
+
 div.inner-content ol.toc__chapters li {
   font: inherit;
   color: inherit;
