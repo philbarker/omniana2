@@ -13,11 +13,16 @@
     background-color: $old-paper;
   }
   section.chapter {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    @media (min-width: $phone-width ) {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+    @media (max-width: $phone-width ) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
     padding-bottom: 4rem;
     padding-top: 3rem;
-
   }
   section.chapter p {
     font-size: 1.1em;

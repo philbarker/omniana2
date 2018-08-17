@@ -9,7 +9,12 @@ $small-line-height: 1.2rem !default;
 @import 'components/specials';
 
 div.poem {
-  margin-left: 3rem;
+  @media (min-width: $phone-width ) {
+    margin-left: 3rem;
+  }
+  @media (max-width: $phone-width ) {
+    margin-left: 1rem;
+  }
   font-size: $small-font-size;
   line-height: $small-line-height;
   margin-bottom: 0.5rem;
@@ -23,10 +28,16 @@ div.poem p{
   text-indent: 0px;
 }
 
+
 .quote-cite {
 //  margin-top: -0.3em;
   margin-bottom: 0.5em;
-  margin-left: 2.5em;
+  @media (min-width: $phone-width ) {
+    margin-left: 2.5em;
+  }
+  @media (max-width: $phone-width ) {
+    margin-left: 1em;
+  }
   font-style: italic;
   text-align: right;
 }
