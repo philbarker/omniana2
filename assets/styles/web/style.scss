@@ -3,6 +3,18 @@ $type: 'web';
 $phone-width: 516px;
 $tablet-width: 960px;
 
+//over-rides screen width option set through control panel
+main#main div#content.site-content {
+  @media (min-width: $phone-width ) {
+    width: $phone-width;
+  }
+  @media (max-width: $phone-width ) {
+    width: auto;
+  }
+
+}
+
+
 @import 'fonts';
 @import '../components/colors';
 @import '../components/elements';

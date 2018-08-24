@@ -1,19 +1,7 @@
 
 @if $type == 'web' {
-  section.front-matter {
-    @media (min-width: $phone-width ) {
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
-    @media (max-width: $phone-width ) {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-    padding-bottom: 4rem;
-    padding-top: 3rem;
-  }
   section.title-page,
-  section.halftitle, {
+  section.halftitle {
     h1 {
       font-family: $font-4;
       font-size: 3rem;
