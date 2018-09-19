@@ -27,18 +27,21 @@ if ( ! \Pressbooks\Book\Helpers\is_book_public() ) {
 }
 global $wp;
 $term_id = get_queried_object_id();
+$term = get_term( $term_id );
 $type = get_term_meta( $term_id, 'schema_type', True );
+$base_url = get_site_url();
+$term_slug = $term->slug;
+$entity_url = $base_url.'/terms/'.$term_slug
 ?>
 	<section class="back-matter wdtax-index"
 	     vocab="http://schema.org/"
-			 resource="<?php echo home_url( $wp->request ).'#id'; ?>"
+			 resource="<?php echo $entity_url; ?>"
 			 typeof ="<?php echo  $type ?>" >
 			<header class="page-header wdtax-header">
 				<?php wdtax_archive_page_header( $term_id ); ?>
 			</header><!-- .page-header -->
 <?php
 $options_arr = get_option( 'wdtax_options' );
-$term = get_term( $term_id );
 if ( isset( $options_arr['rels'] ) ) {
 	//multiloop for each relation taxonomy
 	foreach ( $options_arr['rels'] as $rel ) {
