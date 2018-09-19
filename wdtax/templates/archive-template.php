@@ -2,20 +2,25 @@
 /**
  * A template displaying archive pages for wdtax taxonomies
  *
+ * The WDTax plugin should find this template and use it for
+ * archive pages of custom taxonomy terms.
+ * (see <wdtax>/inc/display_functions.php)
+ *
  * will find the archive for <term> in the <tax> taxonomy
- * at https://eaxmple.com/book/<tax>-terms/<term>/
+ * at https://example.com/book/<tax>-terms/<term>/
  * e.g. https://books.pjjk,net/omniana/mentions-terms/vieyra/
  *
  * based on the twentysixteen archive and content templates
  * & the pressbooks-book McLuhan theme.
  */
 defined( 'ABSPATH' ) or die( 'Be good. If you can\'t be good be careful' );
-function wpdocs_custom_excerpt_length( $length ) {
+function omniana_custom_excerpt_length( $length ) {
     return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'omniana_custom_excerpt_length', 999 );
 
 get_header();
+
 if ( ! \Pressbooks\Book\Helpers\is_book_public() ) {
 	get_template_part( 'private' );
 	die;
