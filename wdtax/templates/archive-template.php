@@ -70,7 +70,7 @@ if ( isset( $options_arr['rels'] ) ) {
 																		 '</a></dt>' ); ?>
 				<?php echo('<dd>'); the_excerpt(); echo('</dd>')?>
 				<link property="<?php echo $rel ?>"
-				      href="<?php echo home_url( $wp->request ).'#id'; ?>" />
+				      href="<?php echo $entity_url; ?>" />
 			</article><!-- #post-## -->
 		<?php
 		echo('</dl>');
