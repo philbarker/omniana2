@@ -31,7 +31,7 @@ $term = get_term( $term_id );
 $type = get_term_meta( $term_id, 'schema_type', True );
 $base_url = get_site_url();
 $term_slug = $term->slug;
-$entity_url = $base_url.'/terms/'.$term_slug
+$entity_url = $base_url.'/entities/'.$term_slug
 ?>
 	<section class="back-matter wdtax-index"
 	     vocab="http://schema.org/"
