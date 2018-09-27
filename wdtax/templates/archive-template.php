@@ -31,7 +31,7 @@ $term = get_term( $term_id );
 $type = get_term_meta( $term_id, 'schema_type', True );
 $base_url = get_site_url();
 $term_slug = $term->slug;
-$entity_url = $base_url.'/entities/'.$term_slug
+$entity_url = $base_url.'/entities#'.$term_slug
 ?>
 	<section class="back-matter wdtax-index"
 	     vocab="http://schema.org/"
@@ -64,7 +64,7 @@ if ( isset( $options_arr['rels'] ) ) {
 		?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 				resource="<?php echo( esc_url( get_permalink() ) )?>"
-				typeof="WebPage">
+				typeof="Article">
 					<?php the_title( sprintf( '<dt property="name"><a href="%s">',
 					                           esc_url( get_permalink() ) ),
 																		 '</a></dt>' ); ?>
