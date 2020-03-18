@@ -28,16 +28,3 @@ function omniana2_theme_setup() {
   add_action('wp_enqueue_scripts', 'omniana_add_styles');
 }
 add_action( 'after_setup_theme', 'omniana2_theme_setup' );
-
-add_filter( 'the_content', 'omniana2_filter_add_schema_type' );
-function omniana2_filter_add_schema_type( $content ) {
-    // Adds schema type to body tag.
-    if ( is_front_page() ) {
-      $schema = '<script type="application/ld+json">{"@context":"http://schema.org","@type": "Book"}</script>';
-    } elseif ( is_single() ) {
-      $schema = '<script type="application/ld+json">{"@context":"http://schema.org","@type": "Chapter"}</script>';
-    } else {
-      $schema='';
-    }
-    return $content.$schema;
-}
