@@ -21,7 +21,7 @@ add_filter( 'excerpt_length', 'omniana_custom_excerpt_length', 999 );
 
 get_header();
 
-if ( ! \Pressbooks\Book\Helpers\is_book_public() ) {
+if ( ! \PressbooksBook\Helpers\is_book_public() ) {
 	get_template_part( 'private' );
 	die;
 }
