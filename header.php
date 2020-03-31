@@ -131,7 +131,7 @@ if ( \PressbooksBook\Helpers\social_media_enabled() ) {
           <div class="reading-header__toc dropdown">
             <h3 class="reading-header__toc__title"><?php _e( 'Index terms', 'pressbooks-book' ); ?></h3>
             <div class="block-reading-toc" hidden>
-              <?php include( locate_template( 'wdtax/templates/index-terms.php' ) ); ?>
+              <?php wdtax_list_the_terms( ) ?>
             </div>
           </div>
         <?php } else { ?>
