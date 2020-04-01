@@ -37,3 +37,26 @@ dl.wdtax-index-list dd {
   font-size: 0.9rem;
   margin-left: 1rem;
 }
+
+div.block-reading-toc {
+  padding: 2rem;
+}
+
+h4.wdtax-relation {
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+ul.wdtax-terms {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  margin-left: 0px;
+  font-size: 1rem;
+  padding-inline-start: 0px;
+}
+
+li.wdtax-term {
+  padding-left: 20px;
+  text-indent: -20px;
+}
