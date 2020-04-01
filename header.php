@@ -127,7 +127,7 @@ if ( \PressbooksBook\Helpers\social_media_enabled() ) {
           <?php
           $options_arr = get_option( 'wdtax_options' );
           # options are set iff wdtax is in use
-          if ( isset( $options_arr['rels'] ) ) { ?>
+          if ( ( is_single() ) && ( isset( $options_arr['rels'] ) ) ) { ?>
           <div class="reading-header__toc dropdown">
             <h3 class="reading-header__toc__title"><?php _e( 'Index terms', 'pressbooks-book' ); ?></h3>
             <div class="block-reading-toc" hidden>
